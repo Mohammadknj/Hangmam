@@ -1,6 +1,5 @@
 body{
     background-image: url(Images/Background.png);
-
     background-size: cover;
     display: flex;
     align-items: center;
@@ -17,6 +16,7 @@ body{
     width: 20%;
     height: 20%;
     font-weight: 600;
+    font-family: "Vazirmatn";
 }
 .timer .time{
     display: flex;
@@ -70,6 +70,9 @@ body{
     justify-content: center;
     column-gap: 1%;
     padding: 5px;
+}
+.Word h4{
+    font-family: "Vazirmatn";
 }
 span{
     /* text-decoration: underline; */
