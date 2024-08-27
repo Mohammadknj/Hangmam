@@ -2,7 +2,7 @@ let countdown;
 let minDisplay = document.getElementById("minute");
 let secDisplay = document.getElementById("second");
 let startButton = document.getElementById("startButton");
-
+let buttons = document.querySelectorAll('.button')
 startButton.addEventListener("click", () => {
     startButton.style.display='none'
 let timeLeft = secDisplay.textContent;
@@ -52,8 +52,8 @@ async function getRandomWord() {
     return "Error fetching word";
   }
 }
+let word = "";
 document.getElementById("startButton").addEventListener("click", async () => {
-  let word = "";
   while (word.length < 3 || word.length > 12) {
     word = await getRandomWord();
     console.log(word.length);
@@ -65,3 +65,4 @@ document.getElementById("startButton").addEventListener("click", async () => {
     document.getElementById('word').appendChild(span)
   }
 });
+
